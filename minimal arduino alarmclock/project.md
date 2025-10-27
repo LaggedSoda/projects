@@ -13,7 +13,7 @@ With a small breadboard, an Arduino UNO R3, a 16x2 LCD {the TC1602A}, jumper wir
 With this in mind, I began working on the simplest alarm.
 
 # Clockv1
-[Code](projects/minimal%20arduino%20alarmclock/clockv1.ino)
+[Code](clockv1.ino)
 
 Code was the only way I was going to get any sort of functionality out of my devices. The first bit of code I made (and some code that was more advanced but promised more accurate time keeping) only had the option to set the time and to adjust the time of the alarm.
 
@@ -24,7 +24,7 @@ Testing the code, I was welcomed with a working clock that kept the time fairly 
 All future versions of the alarm clock are meant to be compatible with future versions of the code.
 
 # Clockv2
-[Code](projects/minimal%20arduino%20alarmclock/clockv2.ino)
+[Code](clockv2.ino)
 
 Version 2 of the code organized the code and added two more buttons that would control the alarm and that would also add support for a piezo buzzer. I was incredibly glad to see that the small piezo buzzer that I had (the PKM22EPP-40) could be seated directly on the Arduino to connect the GND pin and the PWM Pin 10, giving the Arduino an "aestetic" and reserving more space on the small breadboard.
 
@@ -34,7 +34,7 @@ The elephant in the room with this code was that there was no way to adjust the 
 
 
 # Clockv2.1
-[Code](projects/minimal%20arduino%20alarmclock/clockv2.1.ino)
+[Code](clockv2.1.ino)
 
 Version 2.1 adds better formatting for the LCD, buttons to adjust the time of the alarm, and an indicator that showed whether the alarm was set or not. In order to be able to set the time *and* the time for the alarm, I decided to use the button meant for toggling the alarm to also work with the time-setting buttons.
 
@@ -44,7 +44,7 @@ I also added functionality to show the time the alarm was being set to in the se
 
 
 # Clockv3
-[Code](projects/minimal%20arduino%20alarmclock/clockv3.ino)
+[Code](clockv3.ino)
 
 This version of the code claims to implement less flickering (which, visually, it is hard to notice), made the code more efficient (aka less writes to the LCD), and "fixed" a minor flag issue (which was not fixed, but commented out).
 
