@@ -13,13 +13,16 @@ With that being said, it was time to start part 1.
 
 To start the project, I will be using: an Arduino Uno R3, a MicroSD Card Adapter that can connect to the Arduino, and a MicroSD card.
 Below are pictures of what I am using.
-
+![](/images/20251028_181016.jpg) ![](/images/20251028_181113.jpg)
+Above on the adapter is a VHC T125A (Quad Bus Buffer) and a AMS1117 Voltage Regulator.
 
 Firstly, I should state the MicroSD card was initially from a kit I had gotten for the Pi 5. It was here I realized that the adapters I had bought were, in fact, not not for normal sized SD cards, but rather MicroSD cards; because of this, I decided to wipe the Rasbian image off of the SD card to reformat it with F32. I decided to use GParted to do this and "lsblk -f" was giving me the greenlight. From here, it was time to put the wiring and code together. 
 
 It is relatively simple to use the documentation on Arduino's [website to get code and wiring](https://docs.arduino.cc/learn/programming/sd-guide/) in order.
 
 I tweaked the [code](ArduinoSDCardCode1.ino) (of which is not my own) ever so slightly to save an integer "cs" to represent the pin for cs and place that within SD.begin(cs)
+
+![](/images/20251028_181339.jpg)
 
 However, no matter how the board was wired, I could not get the card to initialize. It was here I decided to use AI to try to solve this issue and I was informed that, you guessed it, an Arduino is probably going to have a hard time with a microSDXC 128GB card. Because of this, the adapter likely cannot speak to the card or the arduino can't.
 
