@@ -19,7 +19,7 @@ Firstly, I should state the MicroSD card was initially from a kit I had gotten f
 
 It is relatively simple to use the documentation on Arduino's [website to get code and wiring](https://docs.arduino.cc/learn/programming/sd-guide/) in order.
 
-I tweaked the [code](ArduinoSDCardCode1.ino) ever so slightly to save an integer "cs" to represent the pin for cs and place that within SD.begin(cs)
+I tweaked the [code](ArduinoSDCardCode1.ino) (of which is not my own) ever so slightly to save an integer "cs" to represent the pin for cs and place that within SD.begin(cs)
 
 However, no matter how the board was wired, I could not get the card to initialize. It was here I decided to use AI to try to solve this issue and I was informed that, you guessed it, an Arduino is probably going to have a hard time with a microSDXC 128GB card. Because of this, the adapter likely cannot speak to the card or the arduino can't.
 
