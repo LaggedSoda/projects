@@ -26,4 +26,24 @@ I tweaked the [code](ArduinoSDCardCode1.ino) (of which is not my own) ever so sl
 
 However, no matter how the board was wired, I could not get the card to initialize. It was here I decided to use AI to try to solve this issue and I was informed that, you guessed it, an Arduino is probably going to have a hard time with a microSDXC 128GB card. Because of this, the adapter likely cannot speak to the card or the arduino can't.
 
-From here (October 28, 2025), I will have to postpone this project until I am able to get a smaller microSD card that can support it or I can find a library that could solve this, but I am opting for a functional SD card (for recovering the Pi 5 and to just have another microSD card on hand).
+Luckily, weeks later, I managed to find a microSD card that was SDHC. It was a small 32GB model. With this card, everything worked as intended.
+
+## OOPS, I already did that!
+
+Unfortunately, since it took me weeks to get, I had already moved onto a different project, and that was building an LM386 amp. If you want to see my attemps at playing a .wav file with the arduino R3 and a speaker (with amplification via an LM386), check it out here.
+
+## Calculating 1000 Digits of PI
+
+Otherwise, it was time to finally calculate and store 1000 digits of PI.
+
+In order to do this, I figured the only way I could calculate PI accurately would be to use a Fourier Series (which I thankfully just learned in class recently) and sum an incredibly long decimal. This could be done with the square wave fourier series that can be simplified to (at t = pi/2): 1 = 4/pi * (1 + 1/3 + 1/5 + 1/7 + ...), and we can simplify this into pi/4 = 1 - 1/3 + 1/5 - 1/7 + ... and we just multiply the right side by four.
+
+There is a BIG problem many mathematicians may already see here. This fourier series approximation of pi converges VERY slowly. If we believe what ChatGPT told me, 10 digits of pi would need 10^5 terms, and 1000 digits would need easily over 10^60 terms, which is simply not feasible on an arduino.
+
+However, because math, there are multiple ways to calculate PI. Let me introduce you to the Base-10 Spigot Algorithm.
+
+Basically, we can say pi = 3 + the sum of(  (((-1)^n+1 * (n!)^2)  /  (2n)!) * 10^-n    ). I appologize I do not know how to show the mathematical symbols in Github markdown yet. But the formula I just gave, while it looks like it will be fairly difficult, it will be able to generate a single decimal of PI over each iteration.
+
+We are going to have an array what will be about exactly 10*1000 / 3 in size. And I know what you are thinking: "At this point, why not just give up and spend the next hours of calculating on something useful like reading that book you've been wanting to read or maybe learn a new recipe?"
+
+And to answer that, I say "Quitting is for quitters."
