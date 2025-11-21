@@ -46,7 +46,7 @@ Also, I was really bored and I made some code (again, very smart, so I had it op
 
 ## Trial and Error
 
-The videos capture it perfectly. Just watch.
+The videos capture it perfectly. Just watch. Also, you have to click on the image below to watch; it'll open a YouTube video.
 
 [![Watch the video](https://img.youtube.com/vi/iJ4psQ5GZQk/maxresdefault.jpg)](https://www.youtube.com/watch?v=iJ4psQ5GZQk)
 
