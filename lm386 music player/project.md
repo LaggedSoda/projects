@@ -81,4 +81,4 @@ CS -> Arduino Pin 10
 
 
 
-And here it is, the sound I recorded with my phone so you can hear the crackle and noise in the amp. Ahh, so rustic. It makes imperfection feel intentional, but I didn't intend on the noise, but I liked it.
+And here it is (in the project folder with the .m4a file type), the sound I recorded with my phone so you can hear the crackle and noise in the amp. Ahh, so rustic. It makes imperfection feel intentional, but I didn't intend on the noise, but I liked it.
