@@ -42,7 +42,7 @@ Pin 8: Connects to Pin 1 with a (130 nF) capacitor to control Gain (same capacit
 
 Needless to say, me messing with the contacts on the LM386 played a role before and after the project.
 
-Also, I was really bored and I made some code (again, very smart, so I had it optimized with ChatGPT so it wouldn't eat away at my delicate EERPROM memory). It is a "music engine" and the code is [here]().
+Also, I was really bored and I made some code (again, very smart, so I had it optimized with ChatGPT so it wouldn't eat away at my delicate EERPROM memory). It is a "music engine" and the code is [here](music_maker.ino).
 
 ## Trial and Error
 
@@ -56,7 +56,7 @@ The videos capture it perfectly. Just watch.
 
 If you are here because you want me to do something CRAZY like connecting a .wav file from an external microSD card module and then using TMRpcm.h to then generate a PWM signal from said .wav file???? Then you are in luck.
 
-First, here is the [code](https://github.com/LaggedSoda/projects/blob/main/lm386%20music%20player/wavplayer.ino) for our wavplayer. If you look at it, it first checks if the SD is detected or not, then it just plays the file.
+First, here is the [code](wavplayer.ino) for our wavplayer. If you look at it, it first checks if the SD is detected or not, then it just plays the file.
 
 The song I chose to be the first song I'd ever play on a circuit I made myself (we won't count happy birthday and all of the other projects I have made in the past) was one that was very special to me, and that was also in the YouTube Audio Library where I found it: "Esther's Waltz No.9" by Esther Abrami.
 
