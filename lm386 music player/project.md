@@ -3,9 +3,11 @@
 
 Oh, what joyous day it is today. It has only taken me a week (or less) to finally write about this project. I would like to say that there were many times where what I was doing would probably make someone's chest hurt after what I did to my poor LM386. You'll have to read more to find out about that.
 
+<img src="/images/20251110_181109.jpg">
+
 But, I would like to start where I got this LM386. I got it from an audio kit after I had got my first soldering station. It was meant to be a fun little project where I soldered different components and chips together. However, what wasn't fun was me having to make sure all of the components were in place, since I didn't have any way to hold said components in place, for some reason it wanted to save board space by putting a bunch of resistors and I think a capacitor under an STC89C52RC (which I'd like to start a project about as soon as I learn mandarin to read the datasheets), and the solder pads would rip off after I kept on accidentally joining two pins on the RDA5807M (rest it rest its soul-der). Either way, it was an ambitious soldering project given it was my first time ever soldering. Bad news is that it didn't work, but pressing around on this weird IC (LM386) made loud lightning noises, good news was that I got some new toys to play with.
 
-It was only until recently that I finally sat down and gave the time to build the amplifier with the speaker I also got from the kit t o make something that could play music.
+It was only until recently that I finally sat down and gave the time to build the amplifier with the speaker I also got from the kit to make something that could play music.
 
 ## We Are The Music Makers
 
@@ -17,7 +19,7 @@ It may be difficult to see, but I'll just tell you about the pins on the LM386. 
 
 Going down, left to right, we have:
 
-
+<img src="images/20251110_181058.jpg>
 
 Pin 1: Connects to Pin 8 with a (130nF) capacitor to control Gain
 
@@ -46,13 +48,23 @@ Also, I was really bored and I made some code (again, very smart, so I had it op
 
 The videos capture it perfectly. Just watch.
 
+[![Watch the video](https://img.youtube.com/vi/iJ4psQ5GZQk/maxresdefault.jpg)](https://www.youtube.com/watch?v=iJ4psQ5GZQk)
+
 
 
 ## PWM Awesomeness
 
 If you are here because you want me to do something CRAZY like connecting a .wav file from an external microSD card module and then using TMRpcm.h to then generate a PWM signal from said .wav file???? Then you are in luck.
 
+First, here is the [code](https://github.com/LaggedSoda/projects/blob/main/lm386%20music%20player/wavplayer.ino) for our wavplayer. If you look at it, it first checks if the SD is detected or not, then it just plays the file.
+
 The song I chose to be the first song I'd ever play on a circuit I made myself (we won't count happy birthday and all of the other projects I have made in the past) was one that was very special to me, and that was also in the YouTube Audio Library where I found it: "Esther's Waltz No.9" by Esther Abrami.
+
+Here are some nice angles of this very beautiful circuit:
+
+<img src="/images/20251116_192039.jpg">
+<img src="/images/20251116_192050.jpg">
+<img src="/images/20251116_192055.jpg">
 
 I hooked up the pins for the microSD module the same as is shown in the microSD card project or, if you don't feel like going over there:
 GND -> GND
