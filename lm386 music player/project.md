@@ -7,7 +7,7 @@ Oh, what joyous day it is today. It has only taken me a week (or less) to finall
 
 But, I would like to start where I got this LM386. I got it from an audio kit after I had got my first soldering station. It was meant to be a fun little project where I soldered different components and chips together. However, what wasn't fun was me having to make sure all of the components were in place, since I didn't have any way to hold said components in place, for some reason it wanted to save board space by putting a bunch of resistors and I think a capacitor under an STC89C52RC (which I'd like to start a project about as soon as I learn mandarin to read the datasheets), and the solder pads would rip off after I kept on accidentally joining two pins on the RDA5807M (rest it rest its soul-der). Either way, it was an ambitious soldering project given it was my first time ever soldering. Bad news is that it didn't work, but pressing around on this weird IC (LM386) made loud lightning noises, good news was that I got some new toys to play with.
 
-It was only until recently that I finally sat down and gave the time to build the amplifier with the speaker I also got from the kit to make something that could play music.
+It was only until recently that I finally sat down and gave the time to build the amplifier with the (~4Ω) speaker I also got from the kit to make something that could play music.
 
 ## We Are The Music Makers
 
@@ -25,7 +25,7 @@ Pin 1: Connects to Pin 8 with a (130nF) capacitor to control Gain
 
 Pin 2: We set the (-) inverting pin to GND because we don't need it
 
-Pin 3: We send our input signal here, in our case PWM. We have a low-pass filter (0.3nF and 1kΩ) so it can smooth the square wave to something nicer for the LM386
+Pin 3: We send our input signal here, in our case PWM. We have a low-pass filter (0.3nF and 1kΩ) so it can smooth the square wave to something nicer for the LM386 (I realize my cutoff frequency when I made this may not be the most ideal; later, I intend on trying this out by switching from 0.3nF to 130nF)
 
 Pin 4: GND. There are two capacitors in parallel (a 130nF and a 100μF) connected to pin 6 to make the voltage more stable for the chip.
 
