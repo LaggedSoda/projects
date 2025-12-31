@@ -19,9 +19,9 @@ Of course, I believe there are probably some channels I can't listen to for one 
 
 I already plan on using similar techniques to make an actual FM radio from 88MHz to 108MHz and, if what I asked ChatGPT is correct, I can also listen to NHK World Radio Japan so long as my antennas are long enough.
 
-Below is a small video (WIP) of my small setup.
+Below is a small video of my small setup.
 
-
+[![Watch the video](https://img.youtube.com/vi/gDL-5G-u-qQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=gDL-5G-u-qQ)
 
 In the video above I was using a Framework 13 Laptop with a 7640U with 32GB DDR5 running Arch Linux x86_64 with kernel version 6.18.2-arch2-1 and with a DE of Cinnamon 6.6.3 while using X11.
 
