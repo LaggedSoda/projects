@@ -26,7 +26,7 @@ Though, for now, let's stick with the 1kΩ resistor setup we have going.
 
 From the previous design, I also argue I made it more efficient by taking off the resistors in parallel on the output and to instead use capacitors connected directly to the 4Ω speaker.
 
-For the capacitors I used 2 100uF in parallel that connected directly with the speaker and a 100nF capacitor connected at the output of the LM386 to ground. This was done because I had previously made a grave mistake (treating pin 2 as ground and completely ignoring pin 4), which caused my circuit to oscillate a LOT and it produced various frequencies as a result. Before realizing said mistake, the 100nF capacitor helped alievate some of the issues as it have the higher frequencies a way out of the circut and this would put less strain on the LM386. A short search later and what this is is a Zobel Network without the resistor since I didn't have one.
+For the capacitors I used 2 100uF in parallel that connected directly with the speaker and a 100nF capacitor connected at the output of the LM386 to ground. This was done because I had previously made a grave mistake (treating pin 2 as ground and completely ignoring pin 4), which caused my circuit to oscillate a LOT and it produced various frequencies as a result. Before realizing said mistake, the 100nF capacitor helped alievate some of the issues as it have the higher frequencies a way out of the circut and this would put less strain on the LM386. A short search later and what this is is a Zobel Network without the resistor since I didn't have one. I haven't tested efficiency without this capacitor, but from what I can read it should make our output more stable.
 
 Otherwise, all 100pF capacitors were replaced by the 100nF. The last addition that was made was a potentiometer at the input to adjust the volume. I did this because when I heard the oscillations I assumed the PWM was too high and it was maxing out the IC.
 
@@ -38,6 +38,22 @@ Lastly, I kind of also thought the problem was to do with the shared grounding w
 
 By the end, we are left with a circuit like this:
 
+<img src="/images/20260414_114011.jpg">
+<img src="/images/20260414_115952.jpg">
+<img src="/images/20260414_120000.jpg">
+<img src="/images/20260414_120022.jpg">
+<img src="/images/20260414_120038.jpg">
+<img src="/images/20260414_120045.jpg">
+<img src="/images/20260414_120153.jpg">
 
 
-And with that, we can hook it up and we can hear how the audio has changed. It is louder, less static, and I am overall much happier with it.
+
+And here is the circuit diagram I put together in QUCS-S.
+
+<img src="/images/lm386ampcircuit2.png">
+
+
+
+And with that, we can hook it up and we can hear how the audio has changed. It is louder, less static, and I am overall much happier with it. The new audio is in the folder under "Esther's Waltz Circuit 2.m4a".
+
+Take care.
